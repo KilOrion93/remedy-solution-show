@@ -28,7 +28,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, videoUrl }) =>
         onClick={onClose}
     >
       <div 
-        className="bg-gray-900 rounded-lg shadow-2xl w-full max-w-4xl aspect-video relative"
+        className="bg-black rounded-lg shadow-2xl w-full max-w-4xl relative aspect-video"
         onClick={(e) => e.stopPropagation()}
       >
         <button 
@@ -39,12 +39,12 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, videoUrl }) =>
             &times;
         </button>
         <iframe
-          className="w-full h-full rounded-lg"
-          src={`${videoUrl}?autoplay=1&rel=0`}
-          title="Video player"
+          src={`${videoUrl}?autoplay=1&rel=0&modestbranding=1`}
+          title="Portfolio Video Player"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
+          className="w-full h-full rounded-lg"
         ></iframe>
       </div>
     </div>

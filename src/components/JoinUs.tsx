@@ -6,7 +6,7 @@ const JoinUs: React.FC = () => {
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-4xl md:text-5xl font-black mb-4">Nous <span className="gradient-text">Rejoindre</span></h2>
                 <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
-                    Nous sommes toujours à la recherche de nouveaux talents pour rejoindre notre équipe. Si vous êtes passionné par l'audiovisuel et que vous souhaitez travailler sur des projets ambitieux, consultez nos offres d'emploi.
+                    Nous sommes toujours à la recherche de nouveaux talents pour rejoindre notre équipe.
                 </p>
                 {/* This would ideally link to a page with job offers */}
                 <a 

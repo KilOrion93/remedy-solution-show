@@ -18,7 +18,7 @@ const CheckIcon = () => (
 
 const Services: React.FC = () => {
   const postProdServices = [
-      'Montage', 'Étalonnage', 'Compositing', '3D', 'Motion Design', 'Retouche numérique', 'IA générative'
+      'Montage', 'Étalonnage', 'Compositing', '3D', 'Motion Design', 'Retouche numérique', 'IA générative', 'Mixage', 'Montage son'
   ];
 
   return (

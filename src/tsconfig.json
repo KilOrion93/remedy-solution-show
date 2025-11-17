@@ -24,8 +24,6 @@
       ]
     },
     "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "verbatimModuleSyntax": false,
-    "noUnusedParameters": false,
+    "noEmit": true
   }
 }

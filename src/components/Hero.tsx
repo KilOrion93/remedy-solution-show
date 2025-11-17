@@ -20,7 +20,6 @@ const Hero: React.FC = () => {
             className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
         >
             <source src="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4" type="video/mp4" />
-            {/* <source src="/src/videos/videoog.mp4" type="video/mp4" /> */}
             Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-gray-900/70"></div>

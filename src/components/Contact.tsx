@@ -15,24 +15,29 @@ const LocationIcon = () => (
 
 
 const Contact: React.FC = () => {
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Here you would handle form submission
-        alert("Merci pour votre message ! Nous vous recontacterons bientôt.");
-    };
-
     return (
         <section id="contact" className="py-20 md:py-32 bg-gray-900/50 relative overflow-hidden">
              <div className="absolute top-0 right-0 -translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl -z-10"></div>
              <div className="absolute bottom-0 left-0 translate-x-1/4 translate-y-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl -z-10"></div>
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-3xl mx-auto mb-12">
-                    <h2 className="text-4xl md:text-5xl font-black mb-4">Une proposition de projet <span className="gradient-text">ou une autre demande ?</span></h2>
+                    <h2 className="text-4xl md:text-5xl font-black mb-4"><span className="gradient-text">Contact</span></h2>
                     <p className="text-lg text-gray-400">Discutons de votre projet. Remplissez le formulaire ci-dessous ou envoyez-nous un e-mail, et nous vous contacterons pour planifier un rdv.</p>
                 </div>
 
                 <div className="max-w-2xl mx-auto">
-                    <form onSubmit={handleSubmit} className="space-y-6 bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50">
+                    {/*
+                      IMPORTANT: To make this form send emails, you need to set it up with Formspree.
+                      1. Go to https://formspree.io and create a new form.
+                      2. Set the destination email to sonimayur.pro@gmail.com.
+                      3. Formspree will give you a unique URL.
+                      4. Replace the 'action' URL below with the one you get from Formspree.
+                    */}
+                    <form 
+                        action="https://formspree.io/f/YOUR_UNIQUE_FORM_ID" 
+                        method="POST" 
+                        className="space-y-6 bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50"
+                    >
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Nom complet</label>
                             <input type="text" name="name" id="name" required className="w-full bg-gray-900/70 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500" />

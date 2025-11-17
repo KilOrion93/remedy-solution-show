@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Logo = () => (
@@ -24,9 +25,7 @@ const Logo = () => (
 const navLinks = [
     { href: '#services', label: 'Services' },
     { href: '#portfolio', label: 'Portfolio' },
-    { href: '#process', label: 'Processus' },
     { href: '#team', label: 'Team' },
-    { href: '#joinus', label: 'Nous rejoindre' },
     { href: '#contact', label: 'Contact' },
 ];
 
@@ -50,9 +49,12 @@ const Header: React.FC = () => {
     return (
         <header className="sticky top-0 z-50 py-4 px-4 md:px-8 bg-gray-900/80 backdrop-blur-lg border-b border-gray-800">
             <div className="container mx-auto flex justify-between items-center">
-                <a href="#" aria-label="Homepage" onClick={(e) => handleNavClick(e, '#')}>
-                   <Logo />
-                </a>
+                <div className="flex-1 flex justify-start">
+                    <a href="#" aria-label="Homepage" onClick={(e) => handleNavClick(e, '#')}>
+                       <Logo />
+                    </a>
+                </div>
+                
                 <nav className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
                         <a 
@@ -65,13 +67,10 @@ const Header: React.FC = () => {
                         </a>
                     ))}
                 </nav>
-                <a 
-                    href="#" 
-                    className="hidden md:inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-300 cursor-pointer"
-                >
-                    Accès compte (ftp)
-                </a>
-                {/* Mobile menu button could be added here */}
+
+                <div className="flex-1 flex justify-end">
+                    {/* Empty div for spacing, ensures nav is centered */}
+                </div>
             </div>
         </header>
     );
