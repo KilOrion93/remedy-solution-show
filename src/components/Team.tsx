@@ -1,11 +1,11 @@
 import React from 'react';
 
 const teamMembers = [
-  { name: 'Jean Dupont', role: 'Fondateur & Producteur', imageUrl: 'https://picsum.photos/seed/team1/400/400' },
-  { name: 'Marie Curie', role: 'Directrice de Post-Production', imageUrl: 'https://picsum.photos/seed/team2/400/400' },
-  { name: 'Pierre Martin', role: 'Superviseur VFX', imageUrl: 'https://picsum.photos/seed/team3/400/400' },
-  { name: 'Sophie Dubois', role: 'Coloriste Senior', imageUrl: 'https://picsum.photos/seed/team4/400/400' },
-  { name: 'Lucas Moreau', role: 'Motion Designer', imageUrl: 'https://picsum.photos/seed/team5/400/400' },
+  { name: 'Karim Chafi', role: 'Fondateur & Producteur', imageUrl: 'https://picsum.photos/seed/team1/400/400' },
+  { name: 'Joseph Jonathan', role: 'Développement et Partenariat', imageUrl: 'https://picsum.photos/seed/team3/400/400' },
+  { name: 'Olivier Silvente', role: 'Direction de Post-Production', imageUrl: 'https://picsum.photos/seed/team2/400/400' },
+  { name: 'Fred Sultan', role: 'Producteur', imageUrl: 'https://picsum.photos/seed/team4/400/400' },
+  { name: 'Fernand Garcia', role: 'Superviseur VFX', imageUrl: 'https://picsum.photos/seed/team5/400/400' },
 ];
 
 const Team: React.FC = () => {

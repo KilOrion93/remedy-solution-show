@@ -8,8 +8,8 @@ interface PortfolioProps {
 
 const portfolioData: PortfolioItem[] = [
   { id: 1, thumbnailUrl: '/images/gods_sword.png', videoUrl: '', title: "God's Sword", category: 'Film' },
-  { id: 2, thumbnailUrl: '/images/nuit_du_destin.jpg', videoUrl: '', title: 'Les Terreurs du Terroir', category: 'Film' },
-  { id: 3, thumbnailUrl: '/images/terreur_teroire.jpg', videoUrl: '', title: 'Voyage au Maroc', category: 'Documentaire' },
+  { id: 2, thumbnailUrl: '/images/terreur_teroire.jpg', videoUrl: '', title: 'Les Terreurs du Terroir', category: 'Film' },
+  { id: 3, thumbnailUrl: '/images/madame_shakespeare.png', videoUrl: '', title: 'Madame Shakespeare', category: 'Film' },
 ];
 
 const PlayIcon = () => (
